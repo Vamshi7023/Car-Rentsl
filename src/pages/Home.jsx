@@ -1,8 +1,7 @@
 import React from "react";
-
 import HeroSlider from "../components/UI/HeroSlider";
 import Helmet from "../components/Helmet/Helmet";
-import { useNavigate } from "react-router-dom"; //
+import { useNavigate } from "react-router-dom";
 import { Container, Row, Col } from "reactstrap";
 import { useEffect } from "react";
 import FindCarForm from "../components/UI/FindCarForm";
@@ -12,21 +11,24 @@ import carData from "../assets/data/carData";
 import CarItem from "../components/UI/CarItem";
 import BecomeDriverSection from "../components/UI/BecomeDriverSection";
 import Testimonial from "../components/UI/Testimonial";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import BlogList from "../components/UI/BlogList";
+import CarTypes from "../components/UI/CarTypes";
 
 const Home = () => {
   const navigate = useNavigate();
+
   useEffect(() => {
     AOS.init({
       offset: 100,
       duration: 800,
       easing: "ease-in-sine",
       delay: 100,
-    })
+    });
     AOS.refresh();
-  }, [])
+  }, []);
+
   return (
     <Helmet title="Home">
       {/* ============= hero section =========== */}
@@ -49,8 +51,12 @@ const Home = () => {
           </Container>
         </div>
       </section>
+
       {/* =========== about section ================ */}
       <AboutSection />
+
+      {/* =========== CarTypes Section =========== */}
+      <CarTypes/>
       {/* ========== services section ============ */}
       <section>
         <Container>
@@ -64,6 +70,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
       {/* =========== car offer section ============= */}
       <section>
         <Container>
@@ -79,6 +86,7 @@ const Home = () => {
           </Row>
         </Container>
       </section>
+
       {/* =========== become a driver section ============ */}
       <BecomeDriverSection />
 

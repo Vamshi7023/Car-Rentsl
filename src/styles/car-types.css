@@ -1,0 +1,23 @@
+.car__type-button {
+    border: none !important; /* Removes button border */
+    background: none;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+  }
+  
+  .car__type-card {
+    border: none !important; /* Removes card border */
+    box-shadow: none !important; /* Ensures no shadow */
+    background: #fff; /* Optional: Keeps a clean background */
+  }
+  
+  .car__type-card img {
+    border-radius: 8px; /* Optional: Adds smooth corners */
+  }
+  
+  .car__type-button:focus {
+    outline: none; /* Removes focus border */
+  }
+  

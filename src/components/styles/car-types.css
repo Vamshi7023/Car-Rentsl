@@ -1,0 +1,37 @@
+.car__types-section {
+    padding: 60px 0;
+  }
+  
+  .car__type-card {
+    border:none;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .car__type-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .car__type-img img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .car__type-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .car__type-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .car__type-description {
+    font-size: 1rem;
+    color: #666;
+  }
