@@ -1,0 +1,82 @@
+.car__types-section {
+    padding: 60px 0;
+}
+
+.section__subtitle {
+    color: #f9a826;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 50px;
+    margin-bottom: 20px;
+}
+
+.section__title {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.car__type-button {
+    background: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.car__type-card {
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car__type-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.car__type-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.car__type-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.car__type-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #000d6b;
+    text-align: center;
+}
+
+.car__type-description {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 992px) {
+    .car__type-img img {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .car__type-img img {
+        height: 160px;
+    }
+}

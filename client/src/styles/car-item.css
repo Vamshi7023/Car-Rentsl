@@ -1,0 +1,140 @@
+/* car-item.css */
+
+.car__item {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.car__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.car__img {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.car__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.car__item:hover .car__img img {
+  transform: scale(1.05);
+}
+
+.car__item-content {
+  padding: 0 20px 20px;
+}
+
+.section__title {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.rent__price {
+  font-size: 1.5rem;
+  color: #f9a826;
+  font-weight: 600;
+}
+
+.rent__price span {
+  color: #777;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.car__item-info {
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.car__item-info span {
+  color: #555;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.car__item-info i {
+  color: #f9a826;
+  font-size: 1.1rem;
+}
+
+.car__item-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin: 5px 0;
+  border: none;
+  cursor: pointer;
+}
+
+.car__btn-rent {
+  background: #f9a826;
+  margin-right: 5px;
+}
+
+.car__btn-rent a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.car__btn-rent:hover {
+  background: #e8971e;
+  transform: translateY(-2px);
+}
+
+.car__btn-details {
+  background: transparent;
+  border: 1px solid #f9a826;
+}
+
+.car__btn-details a {
+  color: #f9a826;
+  text-decoration: none;
+}
+
+.car__btn-details:hover {
+  background: rgba(249, 168, 38, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 992px) {
+  .car__item {
+    margin-bottom: 30px;
+  }
+  
+  .car__item-content {
+    padding: 0 15px 15px;
+  }
+  
+  .section__title {
+    font-size: 1.2rem;
+  }
+  
+  .rent__price {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .car__item {
+    margin-bottom: 30px;
+  }
+}
